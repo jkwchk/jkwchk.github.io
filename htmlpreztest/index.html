@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>htmlprez</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Microsoft Jhenghei;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<p>HTML5 Presentation</p>
+<p><em>好吧Prezi是收費的==，那就自己動手豐衣足食吧。</em></p>
+<h1>高(折)大(騰)上(人)的幻燈片</h1>
+<p>雖然某軟的PPT已經很高大上了，但是你還是覺得它不够好了。
+——你終於發現了。</p>
+<p>那麼，歡迎擁抱HTML5。</p>
+<p>本系列教學的終極目標是——Be a Professional  Web Developer!
+好吧開玩笑的，但是如果順便學了一些網頁開發的知識豈不是更好嗎(笑)。</p>
+<p>好的，那開始了。</p>
+<h2>一，你要做的是個什麼東西。</h2>
+<p>你要做的是一個很高大上的簡報(幻燈片)。</p>
+<p>像這個，請點開看一下。</p>
+<p>或者這樣的，請再看一個例子。</p>
+<p>歡迎回來。
+看完知後感覺如何呢？很酷？也想做？是的話請繼續往下看。(不想看的話可以直接按Ctrl+W啦)</p>
+<p>你有沒有想過這種簡報是什麼黑科技呢？</p>
+<p>好吧，不是黑科技，這是最新的網頁技術。(知道HTML5爲何物的可以跳過了)</p>
+<p>之前你所看到的那些其實都是網頁啦，只不過結和新的HTML5和還算是強大的CSS3以及JavaScript就可以打造出幾乎任何你想要的效果啦。(前面那幾個英文不明月白沒有關係，以後就會懂啦)</p>
+<p>而且在網頁中能實現的特效可是比某軟的某工具多多了~</p>
+<p>所以如果你也想製作這樣的簡(網)報(頁)，先來學一些HTML基礎吧。</p>
+<h2>二，HyperText Markup Languge(HTML)</h2>
+<p>翻譯成中文大概是「超文本標記語言」。看不懂沒關係，請看下面：</p>
+<p>Markup Languge，標記語言，就是用來做標記的語言。</p>
+<p>長這個樣子：</p>
+<pre><code>&lt;html&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;你好&lt;/h1&gt;
+
+&lt;p&gt;你好我好大家好&lt;/p&gt;
+
+&lt;img src=&quot;hello.jpg&quot;&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+
+<p>這段代碼的效果是這樣的：</p>
+<img src="2-1.jpg">
+<p>所以呢，&lt;h1&gt; &lt;/h1&gt;標記的是標題-等級一，也就是最大的標題，當然還有h2, h3一直到h6依次變小。(順便一提：一般也就用三個)</p>
+<p>&lt;p&gt;&lt;/p&gt;標記的是段落，即正文。</p>
+<p>&lt;img src=&quot;hello.jpg&quot;&gt;這就是圖片啦。</p>
+<img src="2-2.jpg">
+<p>然後你的瀏覽器根據這些代碼就顯示出了這樣的網頁。</p>
+<p>接下來要介紹HTML中的HT了。</p>
+<p>超Hyper：「超」就是超啦，很厲害的感覺。</p>
+<p>文本Text：文本就是字嘍，純文本就是只有文字嘍，沒有其它什麼圖片聲音格式等等。</p>
+<p>Bingo，所以HyperText 超文本就是很厲害的文本，它不僅有文字還有圖片聲音格式等等。</p>
+<p>才怪咧！超文本再厲害它也是文本啊。你問它爲什麼是「超」文本？因爲它有超鏈接啊。就是你在網上經常見到的東西，一般長這樣。因爲超鏈接是超鏈接所以靠着它你就可以傲遊網路了。</p>
+<p>所以，超文本是網頁的基本元素。</p>
+<p>簡單說HTML就是用來標記網頁的結構的。</p>
+<p>(這個「你好」是大標題，「你好我好大家好」是一個段落，blah, blah...)</p>
+<h2>三，光有結構是不行的！樣式！樣式！</h2>
+<p>你看這樣多醜，可不可以加工一下，比如某老師說要用「宋體四號字」……</p>
+<p>當然可以，只不過在網頁中我們不用選中再選擇樣式。我們有還算是強大的CSS——</p>
+<img src="3-1.jpg">
+<img src="3-2.jpg">
+<p><em>先寫到這裏。。。</em></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
