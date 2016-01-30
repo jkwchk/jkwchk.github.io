@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -303,13 +302,13 @@ img {
 <p>好的，那开始了。</p>
 <h2>一，你要做的是个什么东西。</h2>
 <p>你要做的是一个很高大上的简报(幻灯片)。</p>
-<p>像这个，请点开看一下。</p>
-<p>或者这样的，请再看一个例子。</p>
-<p>欢迎回来。
+<p>像这个，请<a href="http://lab.hakim.se/reveal-js/" target="_blank">点开</a>看一下。</p>
+<p>或者这样的，请<a href="http://impress.github.io/impress.js" target="_blank">再看</a>一个例子。</p>
+<p>欢迎回来。<br>
 看完知后感觉如何呢？很酷？也想做？是的话请继续往下看。(不想看的话可以直接按Ctrl+W啦)</p>
 <p>你有没有想过这种简报是什么黑科技呢？</p>
-<p>好吧，不是黑科技，这是最新的网页技术。(知道HTML5为何物的可以跳过了)</p>
-<p>之前你所看到的那些其实都是网页啦，只不过结和新的HTML5和还算是强大的CSS3以及JavaScript就可以打造出几乎任何你想要的效果啦。(前面那几个英文不明月白没有关系，以后就会懂啦)</p>
+<p>好吧，不是黑科技，这是最新的网页技术。</p>
+<p>之前你所看到的那些其实都是网页啦，只不过结和新的HTML5和<del>还算是</del>强大的CSS3以及JavaScript就可以打造出几乎任何你想要的效果啦。(前面那几个英文不明月白没有关系，以后就会懂啦)</p>
 <p>而且在网页中能实现的特效可是比某软的某工具多多了~</p>
 <p>所以如果你也想制作这样的简(网)报(页)，先来学一些HTML基础吧。</p>
 <h2>二，HyperText Markup Languge(HTML)</h2>
@@ -342,16 +341,177 @@ img {
 <p>超Hyper：「超」就是超啦，很厉害的感觉。</p>
 <p>文本Text：文本就是字喽，纯文本就是只有文字喽，没有其它什么图片声音格式等等。</p>
 <p>Bingo，所以HyperText 超文本就是很厉害的文本，它不仅有文字还有图片声音格式等等。</p>
-<p>才怪咧！超文本再厉害它也是文本啊。你问它为什么是「超」文本？因为它有超链接啊。就是你在网上经常见到的东西，一般长这样。因为超链接是超链接所以靠着它你就可以傲游网路了。</p>
+<p>才怪咧！超文本再厉害它也是文本啊。你问它为什么是「超」文本？因为它有超链接啊。就是你在网上经常见到的东西，一般<a>长这样</a>。因为超链接是超链接所以靠着它你就可以傲游网路了。</p>
 <p>所以，超文本是网页的基本元素。</p>
 <p>简单说HTML就是用来标记网页的结构的。</p>
 <p>(这个「你好」是大标题，「你好我好大家好」是一个段落，blah, blah...)</p>
 <h2>三，光有结构是不行的！样式！样式！</h2>
 <p>你看这样多丑，可不可以加工一下，比如某老师说要用「宋体四号字」……</p>
-<p>当然可以，只不过在网页中我们不用选中再选择样式。我们有还算是强大的CSS——</p>
+<p>当然可以，只不过在网页中我们不用选中再选择样式。我们有<del>还算是</del>强大的CSS——</p>
 <img src="3-1.jpg">
 <img src="3-2.jpg">
-<p><em>先写到这里。。。</em></p>
+<p>CSS 的全名为 Cascading Style Sheets<del>(不是Counter-Strike: Source)</del>，不明白全名没关系啦，记住大家都叫它CSS就好了。</p>
+<p>HTML是用来标记页面上的结构的语言(这个「你好」是大标题，「你好我好大家好」是一个段落，blah, blah...)，CSS就是设定这些结构的样式的语言了(这个大标题要用黑体三号加粗，段落们呢，宋体小四好了，然后这要一个……blah, blah...)。</p>
+<p><del>所以HTML和CSS是一对形影不离的好基友。</del></p>
+<p>先简单看一下CSS是怎样规定网页样式的吧。</p>
+<p>它是由一条一条的「规则」(Rule) 所组成的。</p>
+<p>好，我们来仔细看一条Rule：</p>
+<img src="3-3.png">
+<p>选择器(Selector) 就是用来选择要把这条规则(样式)应用到哪一个HTML元素(element)上，对了，像p(段落)、h1(标题)等这些叫做html中的元素。</p>
+<p>然后在{}中写上规则的内容。</p>
+<p>属性就是你要设定的东西。后面是设定的具体内容。比如这里的，color: red; 就是把文本颜色设定成红色。(嗯，文本颜色是color而不是text-color……)</p>
+<p>不要忘了在属性后加冒号(:)。一个规则中可以有很多条设定，每一个后面记得要用分号(;)结尾。</p>
+<p>所以你就可以规定网页上各个元素的样式了~</p>
+<img src="3-2.jpg">
+<p>当然更详细的会在后面提到的。</p>
+<h2>四，这不是教大家如何做幻灯片的吗？</h2>
+<p>当然是！但前面的知识是在打基础啊打基础~</p>
+<p>好了下面就来说一说高大上的幻灯片是怎么一回事吧。</p>
+<p>高大上的幻灯片就是网页。(嗯…等、这你早就说过了喂！)</p>
+<p>好吧，但它不单单是网页，它是……嗯，有黑科技的网页。不，应该叫做应用(App)了，于是一个高大上的名词就此诞生了——WebApp！</p>
+<p>这个WebApp呢，顾名思义就是基于网页的App啦，不用安装就能用，可以打游戏，可以放幻灯片，还可以做出一个<a target="_blank" href="http://osjsv2.0o.no/">桌面</a>来嘞~</p>
+<p><del>好吧感觉越扯越远了==。。。</del></p>
+<p>所以要实现App的功能，除了标记语言和样式定义语言是不够的，要有真正的程序语言啦~</p>
+<p>这就是传说中的编程了？听起来好像会很难……</p>
+<p>不不不，不会很难(虽然编程确实不太简单)，但你不会涉及到所以……嗯，有别人写好的，直接用就好了~(免费哒~)</p>
+<h2>五，说了这么多废话、终于要开始了</h2>
+<p>不说了，下面请出第一个HTML Presentation框架——reveal.js!  (鼓掌~)</p>
+<p>来，<a target="_blank" href="http://lab.hakim.se/reveal-js/#/">打开看看</a></p>
+<p>好吧其实这就是一开始的那第一个……(被你发现了。。。)</p>
+<p>让我们从较传统式的开始吧。</p>
+<p>这就是传统风格的幻灯放映方式了。一页一页，嗯这没有什么不好的(第二个就会介绍那个炫酷的了，莫急~)，其实很多场合这种方式还是满实用的。</p>
+<p>来来来，先把这个<a target="_blank" href="https://github.com/hakimel/reveal.js/archive/3.2.0.zip">下载</a>下来。</p>
+<p>现在你有了reveal.js的源代码。(当然是你解压缩之后~)</p>
+<p>(源代码是什么？这个我先想想下次再回答)</p>
+<p>打开reveal.js-3.2.0文件夹，你应该能看到类似下面这样的这些文件：</p>
+<p>如果你用Windows，大概是这个样子</p>
+<p><img src="5-1.png" /></p>
+<p>如果你用Mac，大概是这个样子</p>
+<p><img src="5-1-mac.png" /></p>
+<p>以后所有的操作截图都是基于Windows 10的了，不过放心，其它系统也都大概类似的~</p>
+<p><img src="5-2.png" /></p>
+<p>对了，在开始之前先说一下你都需要准备什么吧：</p>
+<p>一个你喜欢的HTML幻灯框架(比如说这个reveal.js)</p>
+<p>一个你喜欢的文本编辑器(这个一会再说)</p>
+<p>一个你喜欢的现代浏览器(比如Chrome, Firefox等)</p>
+<p>OK, 没有意外你已经可以开始了。</p>
+<h3>你的第一个网页幻灯</h3>
+<p>首先，在reveal.js文件夹下新建一个文本文档(比如，命名为「我的第一个」)，打开，把下面的代码复制进去，保存成utf-8编码，然后把名字改成「我的第一个.html」，或者你自己起的名字.html，嗯，*.txt的文件是文本文档，html即网页文件的后缀是.html。</p>
+<img src="re-1.png" />
+<p>(utf-8是什么？这要怎么保存成？</p>
+<p>utf-8是unicode的一种，简单说就是同时有很多语言，如中、英，的时候，不会乱码。</p>
+<p>在Windows的记事本中，找「文件」，然后「另存为」，在格式中下拉选「所有類型」(*.*)，这时 你就可以直接写上名字.html了，在编码中下拉选「utf-8」。
+)</p>
+<p>(如果你在Windows下看不到文件后缀，请到「文件夹选项」-「查看」中找到隐藏已知文件扩展名，把 ✓ (勾)去掉)。</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/reveal.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/white.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;reveal&quot;&gt;
+        &lt;div class=&quot;slides&quot;&gt;
+            &lt;section&gt;我的第一个HTML幻灯片&lt;/section&gt;
+            &lt;section&gt;这是第二页&lt;/section&gt;
+            &lt;section&gt;
+              &lt;h2&gt;这是是最后一页&lt;/h2&gt;
+              &lt;p&gt;谢谢&lt;/p&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src=&quot;js/reveal.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        Reveal.initialize();
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>OK，现在你就有了「我的第一个.html」，直接打开，如果你的html关联着上面说的那些浏览器之一。如果你的默认浏览器比较旧或着不支援HTML5，你可以打开，比如说Chrome然后按下Ctrl+O，打开你的html文件，或者直接拖动至浏览器窗口就打开了~</p>
+<p>你应该能看到你的幻灯片，按下右方向键或右下角的按钮，好好欣赏一下吧。</p>
+<p>你看到的应该差不多是这样的：<br>
+<img src="1stprezdemo.gif" /></p>
+<p>好的我们现在要从最基本的标签(tag)说起了，直到你能明白「我的第一个.html」到底是如何运作的。</p>
+<p>(你刚才提到了标签(tag)对吗，那是什么？)</p>
+<p>tag就是<code>&lt;h1&gt;&lt;/h1&gt;&lt;html&gt;&lt;/html&gt;</code>这些啦。</p>
+<h3>解剖标签</h3>
+<p><img src="tags-dissected-sc.png" /></p>
+<p>所以你用一对一对的标签裹上你的内容来告诉浏览器你的页面结构是什么样的。</p>
+<p>别忘了：元素(element) = 开启标签(opening tag) + 内容 + 关闭标签(closing tag)</p>
+<p>对了，这有几个标签你需要认识一下：</p>
+<p><code>&lt;html&gt;</code>标签：你可能已经发现了，网页中所有的元素都是在<code>&lt;html&gt;&lt;/html&gt;</code>中的。</p>
+<p>所以一个网页最两端的标签一定是<html>(开始一个网页)和<code>&lt;/html&gt;</code>(结束一个网页)。</p>
+<p>然后就是头和身体了。
+(蛤？头和身体？！)</p>
+<p>嗯对，这里说的是html中的结构，或者元素——头(head)和身体(body)：</p>
+<h3>Head</h3>
+<p><code>&lt;head&gt;</code>元素是在<code>&lt;html&gt;</code>中排在最前面的部分。</p>
+<p>在<code>&lt;head&gt;&lt;/head&gt;</code>放一些<del>乱七八糟</del>很重要的东西：</p>
+<p>比如<code>&lt;title&gt;&lt;/title&gt;</code>中写的是你这个网页的标题。</p>
+<p>这个没有也可以啦~(你看上面那个就没有)</p>
+<p>虽然是允许的但是总是起个名字(标题)对谁都没有坏处不是吗。</p>
+<p>在这个的<head>元素中只有下面这些元素：</p>
+<pre><code>    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/reveal.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/white.css&quot;&gt;
+</code></pre>
+
+<p>这是<code>&lt;link&gt;</code>元素……喂！等、你不是说元素都要有开始和结束的标签吗！这里怎么只有一个！而且里面这些乱七八糟的东西是什么！</p>
+<p>呃……别急，让我慢慢解释一下……</p>
+<p>有句话怎么说，「凡事都有例外」不是吗，所以html中也是如此喽~</p>
+<p>所以<del>总有那么一些特立独行的标签想要过单身生活</del>有一些标签是不需要内容的，那么它们也就不需要closing tag了。</p>
+<p>比如说这个<link>吧，它做的工作只是给这个网页链接一些外部的东西。比如这有份样式表(CSS)，但没写到这个页面中，那个谁，<code>&lt;link&gt;</code>，你给做个链接，告诉浏览器我的CSS在那个哪呢……</p>
+<p>所以一个标签不仅是只有名字的，<del>(除了姓名还要有姓别、民族……)</del>他还可以有各种各样的「属性 」(attribute)</p>
+<p><img src="attribute.png" /></p>
+<p>这里给<html>加了一个lang(语言)的属性(attribute)，告诉浏览器这个网页是英文(en-US)的</p>
+<p>一个标签可以有多个属性(attribute)，比如这样：</p>
+<pre><code>&lt;img src=&quot;test.jpg&quot; width=&quot;100&quot; height=&quot;100&quot;&gt;
+</code></pre>
+
+<p>(可以猜一下这个tag和这些属性的作用喔。<del>猜对有奖~</del>)</p>
+<h3>解剖<link></h3>
+<pre><code>    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/reveal.css&quot;&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/theme/white.css&quot;&gt;
+</code></pre>
+
+<p>rel=relationship，定义一下链接的文档和当前文档的关系，这里的<code>rel=&quot;stylesheet&quot;</code>，就是告诉浏览器我链接的是一个样式表(stylesheet, 嗯没错CSS一般还被叫做stylesheet即样式表)啊。</p>
+<p><code>href=&quot;css/reveal.css&quot;</code>，href就是链接的意恩，<code>&quot;css/reveal.css&quot;</code>是它的位址。(喂，浏览器，我要链接的文档是css下的reveal.css)</p>
+<p>所以<code>&lt;link&gt;</code>不需要什么内容。于是它被大家叫做空元素(void element)(void是什么都没有的意恩)</p>
+<p>所以<code>&lt;link&gt;</code>在这给你的网页(幻灯片)指定了两个样式表。(这个以后再详谈)</p>
+<h3>Body</h3>
+<p>这就是HTML的身体了。</p>
+<p>网页中你想要呈现出来的内容都在<code>&lt;body&gt;&lt;/body&gt;</code>中。啊，对了，脑袋(<code>&lt;head&gt;</code>元素)中的<del>乱七八糟</del>重要的东西都是有关这个网页的需要让浏览器知道的信息。这些内容都是不会显示在网页中的。所以你想呈现出来的内容都要写在<body>元素中。</p>
+<p>OK, <code>&lt;body&gt;</code>中的第一个元素，<code>&lt;div&gt;</code>，div应该就是division的缩写，所以这就是「分区」之类的。</p>
+<p>一个<code>&lt;div&gt;</code>元素就是一个独立的区块。所以用<div>标签就可以在页面中标记出很多独立的、不同的部分，再配合class属性，就可以变换出各种各样的<del>魔法泡泡</del>部分了。</p>
+<p>所以你看到这个<code>&lt;div&gt;</code>元素中有一个class属性。
+<img src="div-1.png" />
+<p>class=&quot;reveal&quot;</p>
+<p>class这个属性就是定义这个元素是哪个班的~</p>
+<p>比如这个div是reveal班的，那个什么元素是13级2班的…</p>
+<p>好吧，其实class在英文中还有集团、阶层等的意思，就是性质或什么都相同的一<del>坨</del>堆东西、人等所在的那个……对了好像有个词叫「类」。</p>
+<p>class 属性规定元素的类名（classname）。</p>
+<p>对元素分好了类(class)，就可以方便控制了啊哈哈。比如在CSS中把这一类闹成红色，给那一类加上<del>灯光、音效</del>……</p>
+<p>所以最外面的<code>&lt;div class=&quot;reveal&quot;&gt;</code>是整个reveal.js(就是你现在用的html幻灯片序)的大框架，这个里面的<code>&lt;div class=&quot;slides&quot;&gt;</code>是幻灯片所在的地方(分区)啦。</p>
+<p>每一个<code>&lt;section&gt;</code>元素便是一张(页)幻灯了。</p>
+<p><img src="re-struc.png" /></p>
+<p>你问为什么要用这样的结构？</p>
+<p>因为这个应用就是这样设计的啊:P</p>
+<p>所以这个幻灯片应用的标记结构就是图中所示的这样啦~</p>
+<p><code>&lt;section&gt;</code>元素，也就是你放幻灯片内容的元素可以有无限多~</p>
+<p>如果你在<code>&lt;section&gt;</code>元素里面再套上一<del>坨</del>层<code>&lt;section&gt;</code>元素呢，这些<code>&lt;section&gt;</code>元素，即这些幻灯片，就都是垂直(翻页)的了~
+<img src="re-vertical.png" /></p>
+<p>好，让我们看看下面的……
+<img src="script-intro.png" /></p>
+<pre><code>    &lt;script src=&quot;js/reveal.js&quot;&gt;&lt;/script&gt;
+    &lt;script&gt;
+        Reveal.initialize();
+    &lt;/script&gt;
+</code></pre>
+
+<p>这个呢，就是引用上reveal.js的程式脚本，然后在开启它的意思了。</p>
+<p>(黑科技开启！<del>地球毁灭初始化中……</del>)</p>
+<p>所以这是必不可少的部分。没有它幻灯就放不出来了。</p>
+<p><em>(呼，总算把第一个坑塡的差不多了，下后面会介绍reveal的一些其它功能，修改主题及自订样式等，还有一些问答……)</em></p>
+
 
 </body>
 </html>
