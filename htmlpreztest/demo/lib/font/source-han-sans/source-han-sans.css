@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('source-han-sans-regular.eot');
+    src: url('source-han-sans-regular.eot?#iefix') format('embedded-opentype'),
+         url('source-han-sans-regular.woff') format('woff'),
+         url('source-han-sans-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('source-han-sans-medium.eot');
+    src: url('source-han-sans-medium.eot?#iefix') format('embedded-opentype'),
+         url('source-han-sans-medium.woff') format('woff'),
+         url('source-han-sans-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('source-han-sans-light.eot');
+    src: url('source-han-sans-light.eot?#iefix') format('embedded-opentype'),
+         url('source-han-sans-light.woff') format('woff'),
+         url('source-han-sans-light.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Han Sans';
+    src: url('source-han-sans-bold.eot');
+    src: url('source-han-sans-bold.eot?#iefix') format('embedded-opentype'),
+         url('source-han-sans-bold.woff') format('woff'),
+         url('source-han-sans-bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'dflishu';
+    src: url('DFT_L5.eot');
+    src: url('DFT_L5.eot?#iefix') format('embedded-opentype'),
+         url('DFT_L5.woff') format('woff'),
+         url('DFT_L5.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

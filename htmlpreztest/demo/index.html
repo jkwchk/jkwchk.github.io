@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="utf-8">
+
+        <title>HTML幻燈片介紹</title>
+
+        <meta name="description" content="用HTML+CSS+JavaScript來製作現代幻燈片">
+        <meta name="author" content="@jkwchk">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/white.css">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/custome-font-spider.css">
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+    <h1>一起來做HTML簡報吧</h1>
+</section>
+
+<section id="why">
+    <h2>爲什麼要用HTML呢</h2>
+</section>
+
+<section data-transition="zoom">
+    <section data-background="#DAC9A6" data-state="effect"><h2 class="tlt-e" data-in-effect="bounce">無與倫比的特效</h2><p class="tltp-e" data-in-effect="fadeInUp">從平面到立體，結合現代瀏覽器和全新的網頁開發技術，你可以得到遠超傳統桌面應用的各式效果。</p></section>
+
+    <section data-state="style" data-transition="convex" data-background="#b5533c" data-background-transition="zoom"><h2 class="tlt-s"  data-in-effect="flash">隨心所欲的樣式</h2><p class="fragment grow">CSS3可以讓你輕鬆地得到滿意的樣式</p><p class="fragment grow">JavaScript應用幫你實現各種各樣的設計</p><p class="fragment grow">發揮你的想象力，幻燈片也可以是藝術品</p></section>
+
+    <section data-transition="concave" data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-video-loop data-background-transition="zoom" data-background-color="#000000"><div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;"><h2>無縫結合多媒體</h2></div></section>
+
+    <section data-transition="fade" data-background="#4d7e65" data-background-transition="zoom"><h4 class="hit-the-floor animated infinite pulse">這僅僅只是開始</h4></section>
+</section>
+
+<section data-state="learn" data-background="#A5DEE4">
+    <h2 class="tlt-l" data-in-effect="bounceIn">學習必要知識</h2>
+    <p class="tltp-l" data-in-effect="wobble">HTML + CSS + JavaScript = 隨你想要</p>
+</section>
+
+<section data-background="#FEDFE1" data-background-transition="zoom">
+    <section><h2>HTML</h2></section>
+    <section><h2>超文本標記語言</h2>
+    <p><span style="color:#2EA9DF">H</span>yper <span style="color:#2EA9DF">T</span>ext <span style="color:#2EA9DF">M</span>arkup <span style="color:#2EA9DF">L</span>anguage</p></section>
+    <section><pre><code class="hljs">&lt;!DOCTYPE html&gt; 
+&lt;html&gt; 
+&lt;head&gt; 
+&lt;title&gt;這是一個HTML頁面&lt;/title&gt; 
+&lt;/head&gt; 
+&lt;body&gt; 
+&lt;h1&gt;你好，世界！&lt;/h1&gt; 
+&lt;/body&gt; 
+&lt;/html&gt;</code></pre>
+    </section>
+    <section><img src="media/img/2-2.jpg"></section>
+</section>
+
+<section data-background="#533D5B" data-background-transition="convex">
+    <section><h2>CSS</h2></section>
+    <section>
+        <pre><code class="hljs hljs-css">h1 {
+    color: white;
+    font-family: "一個超酷的字體"
+    font-size: 36px;
+    }
+
+p {
+    color: red;
+    font-size: 22px;
+    }</code></pre>
+    </section>
+    <section><img src="media/img/3-2.jpg"></section>
+    <section>
+        <h2 class="animated infinite tada">CSS文字動畫</h2>
+    </section>
+</section>
+
+<section data-background="#81C7D4" data-background-transition="concave">
+    <section><h2>reveal.js</h2></section>
+    <section>
+                    <h2>各種常用功能比如 List</h2>
+                    <ul>
+                        <li>No order here</li>
+                        <li>Or here</li>
+                        <li>Or here</li>
+                        <li>Or here</li>
+                    </ul>
+
+                    <ol>
+                        <li>One is smaller than...</li>
+                        <li>Two is smaller than...</li>
+                        <li>Three!</li>
+                    </ol>
+                </section>
+    <section>
+                    <h2>…表格</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Value</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Apples</td>
+                                <td>$1</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Lemonade</td>
+                                <td>$2</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Bread</td>
+                                <td>$3</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section><h2>不要老是盯着幻燈看</h2><p>按下 B 關閉/開啓放映</p></section>
+                <section class="vertical"><h2>直書當然沒問題</h2><p class="dflishu">故人西辭黃鶴樓<br>煙花三月下揚州<br>孤帆遠影碧空盡<br>唯見長江天際流</p></section>
+                <section><h2>當然還可以有更多……</h2></section>
+</section>
+
+<section style="text-align: left; padding-left: 100px;"><h1>完</h1><h2>謝謝</h2></section>
+            </div>
+        </div>
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+        <script src="plugin/jquery/jquery.min.js"></script>
+        <script src="plugin/textillate/jquery.fittext.js"></script>
+        <script src="plugin/textillate/jquery.lettering.js"></script>
+        <script src="plugin/textillate/jquery.textillate.js"></script>
+        <script>
+
+            // 完整的設定參數請參考：https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: false,//控制器：預設爲 開啟。這裏我們把它設爲false，就看不到右下的那些按鈕了
+                progress: false,//進度條：預設開啟，這裏設爲關閉。
+                history: true,
+                //設定簡報的寛和高
+
+
+                transition: 'slide', // 轉埸效果，可以設none/fade/slide/convex/concave/zoom
+
+                // 其它可選的 reveal.js 擴展 啟用代碼高亮
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true }
+                ]
+            });
+
+            Reveal.addEventListener( 'effect', function() {
+                $('.tlt-e').textillate({initialDelay: 50});}, false );
+            Reveal.addEventListener( 'effect', function() {
+                $('.tltp-e').textillate({initialDelay: 600});}, false );
+ 
+            Reveal.addEventListener( 'style', function() {
+                $('.tlt-s').textillate({initialDelay: 100});}, false );
+
+            Reveal.addEventListener( 'learn', function() {
+                $('.tlt-l').textillate({initialDelay: 100});}, false );
+            Reveal.addEventListener( 'learn', function() {
+                $('.tltp-l').textillate({initialDelay: 400});}, false );
+        </script>
+
+    </body>
+</html>
