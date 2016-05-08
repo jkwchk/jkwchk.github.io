@@ -2,129 +2,81 @@
 <html lang="en">
 <head>
 
-<!-- Basic Page Needs
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<meta charset="utf-8">
-<title>JKWC.xyz</title>
-<meta name="description" content="">
-<meta name="author" content="">
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>JKWC.xyz</title>
+  <meta name="description" content="Homepage for jkwc.xyz, UNDER CONSTRUCTION">
+  <meta name="author" content="JKWC">
 
-<!-- Mobile Specific Metas
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- FONT
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  <link href="css/fonts/softgo.css" rel="stylesheet" type="text/css">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
 
-<!-- CSS
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/skeleton.css">
-<link rel="stylesheet" href="css/custom.css">
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<!--  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="js/site.js"></script>-->
+  <!--
+  <script>
+  	$(function() {
+  	  $('a[href*=#]:not([href=#])').click(function() {
+  	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
-<!-- Scripts
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<script src="js/jquery.min.js"></script>
-<link rel="stylesheet" href="css/github-prettify-theme.css">
-<script src="js/site.js"></script>
-<!--
-<script>
-	$(function() {
-	  $('a[href*=#]:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+  	      var target = $(this.hash);
+  	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+  	      if (target.length) {
+  	        $('html,body').animate({
+  	          scrollTop: target.offset().top
+  	        }, 1000);
+  	        return false;
+  	      }
+  	    }
+  	  });
+  	});
+  	</script>
+  -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-	});
-	</script>
--->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-66903141-1', 'auto');
+    ga('send', 'pageview');
 
-  ga('create', 'UA-66903141-1', 'auto');
-  ga('send', 'pageview');
+  </script>
 
-</script>
-
-<!-- Favicon
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
-<body class="code-snippets-visible">
+<body>
 
-<!-- Primary Page Layout
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="container">
-<section class="header">
-<h2 class="title">Hello, World</h2>
-<div class="value-props row">
-<div class="ten columns value-prop">
-Welcome to my page. <a href="#intro">About.</a>
-</div>
-</div>
-
-</section>
-
-<div class="navbar-spacer"></div>
-<nav class="navbar">
-<div class="container">
-<ul class="navbar-list">
-<li class="navbar-item"><a class="navbar-link" href="#intro">Intro</a></li>
-<!--<li class="navbar-item">
-<a class="navbar-link" href="#" data-popover="#codeNavPopover">Popover</a>
-<div id="codeNavPopover" class="popover">
-<ul class="popover-list">
-<li class="popover-item">
-<a class="popover-link" href="#grid">Popover test 1</a>
-</li>
-<li class="popover-item">
-<a class="popover-link" href="#typography">popover test 2</a>
-</li>
-<li class="popover-item">
-<a class="popover-link" href="#buttons">popover test 3</a>
-</li>
-</ul>
-</div>
-</li>-->
-<li class="navbar-item"><a class="navbar-link" href="//blog.jkwc.xyz">Blog</a></li>
-<li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
-</ul>
-</div>
-
-</nav>
-
-
-<div class="docs-section" id="intro">
-<h6 class="docs-header">Here goes my intro</h6>
-<p>Um...</p>
-<p>Nothing for now :p</p>
-<p>Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. Lorem ipsum test just test text. </p>
-</div>
-
-<div class="docs-section" id="contact">
-<h6 class="docs-header">Contact me</h6>
-<p>hi@jkwc.xyz</p>
-</div>
-
-
-</div>
-
-
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h2>Under Construction</h2>
+        <h2 class="cjk">準備中</h2>
+      </div>
+    </div>
+  </div>
 
 <!-- End Document
-–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
